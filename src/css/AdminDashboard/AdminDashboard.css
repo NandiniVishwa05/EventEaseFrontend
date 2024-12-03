@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.admindashboardcontainer {
+    height: 100vh;
+    width: 100vw;
+    font-family: "poppins", sans-serif;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 {
+    box-shadow: 0 5px 2px 0 rgba(8, 8, 8, 0.1), 0 2px 2px 0 rgba(51, 51, 51, 0.1);
+    padding: 1vh 1vw;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv .davlogo {
+    height: 11vh;
+    width: 6.3vw;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv .collegenamediv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .2vh;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv .collegenamediv .first {
+    font-size: 1vw;
+    color: #6b6b6b;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv .collegenamediv .second {
+    font-size: 1.8rem;
+    color: #0376d4;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv .collegenamediv .third {
+    color: #6b6b6b;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv .user {
+    padding: 1vh 1vw;
+    font-size: 1.2vw;
+    border: none;
+    outline: none;
+    background-color: white;
+    border: 3px solid #0376d4;
+    color: #0376d4;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv .user:hover {
+    background-color: #0376d4;
+    color: whitesmoke;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv .adminprofile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1vw;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv .adminprofile .profilelogo {
+    height: 10vh;
+}
+
+.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv .adminprofile .adminname {
+    font-size: 1.2vw;
+    color: #6b6b6b;
+}
+
+.admindashboardcontainerdiv3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admindashboardcontainerdiv3 table {
+    width: 100%;
+    padding: 1vw;
+}
+
+.admindashboardcontainerdiv3 th {
+    border: 2px solid #d1d0d0;
+    background-color: #e3e9ee;
+    color: #0376d4;
+    text-align: center;
+    padding: 1.4vh 1vw;
+
+}
+
+.admindashboardcontainerdiv3 td {
+    border: 2px solid #dfdede;
+    text-align: center;
+    padding: 1.3vh;
+    color: #555454;
+    font-size: .9vw;
+}
+
+
+.adminlogoutsection {
+    position: absolute;
+    top: 7%;
+    right: 2%;
+    border-radius: .4rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    border: 2px solid rgb(180, 180, 180);
+    padding: 1vh 3vw;
+    gap: 1vh;
+    color: #525050;
+    display: none;
+    box-shadow: 0 1px 2px 0 #296fa9;
+}
+
+.adminlogoutexitbtn {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 1.2rem;
+    /* height: 3vh;
+    width: 1.8vw; */
+    padding: .3vh .6vw;
+    text-align: center;
+    color: white;
+    /* background-color: #ce0606; */
+    background-color: #0376d4;
+    border-radius: .3rem;
+}
+
+.adminlogoutprofilephoto {
+    height: 10vh;
+    /* width: 6vw; */
+    border-radius: 50%;
+    padding: .8vh;
+    border: 1px solid #6b6b6b;
+}
+
+.adminlogoutname {
+    font-size: .8rem;
+}
+
+
+.adminlogoutbtn {
+    border: none;
+    padding: .8vh .5vw;
+    border-radius: .3rem;
+    border: 3px solid #0376d4;
+    font-family: "poppins", sans-serif;
+    background-color: #0376d4;
+    color: white;
+}
+
+.adminlogoutbtn:hover {
+    background-color: #0376d4;
+    color: #0376d4;
+    border: none;
+    border: 3px solid #0376d4;
+    background-color: white;
+    padding: .8vh .5vw;
+    /* font-size: 1rem; */
+}
+
+.adduserformfield {
+    display: flex;
+    flex-direction: column;
+}

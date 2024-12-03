@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.adminoverlay {
+    background-color: rgba(0, 0, 0, 0.384);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.manageuserdiv {
+    /* border:1px solid red; */
+    height: 100vh;
+    width: 100vw;
+    font-family: "poppins", sans-serif;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.manageusermaincontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vh;
+    /* align-items: center; */
+    background-color: whitesmoke;
+    position: absolute;
+    top: 9%;
+    left: 12%;
+    padding: 2.8vh 2.2vw;
+    justify-content: center;
+}
+
+.exitadminuserform {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .5vh .9vw;
+    color: whitesmoke;
+    background-color: #0376d4;
+}
+
+.manageuserheader {
+    font-size: 2vw;
+    color: #0376d4;
+    padding: 1vh 0;
+}
+
+.adduserbar {
+    padding: 1vh 0;
+    display: flex;
+    gap: 1.5vw;
+}
+
+.adduserlabelname {
+    font-size: 1vw;
+    color: #525252;
+}
+
+.adduserlabel {
+    padding: 1.1vh .5vw;
+    outline: none;
+    border: none;
+    /* border-left: 4px solid #0376d4; */
+    background-color: #e7e7e7;
+    border-radius: 3px;
+    font-family: "poppins", sans-serif;
+    font-size: .8vw;
+}
+
+.addusererrorlabel {
+    color: red;
+    padding: 1.2vh 0;
+}
+
+.adduserbtn {
+    border: none;
+    outline: none;
+    background-color: #0376d4;
+    border: 2px solid #0376d4;
+    padding: .6vh 1vw;
+    font-size: 1vw;
+    font-family: "poppins", sans-serif;
+    color: white;
+    cursor: pointer;
+}
+.adduserbtn:hover{
+    border: 2px solid #0376d4;
+    background-color: white;
+    color: #0376d4;
+}
+.searchlabelname {
+    font-size: 1.1vw;
+    color: #525252;
+}
+
+.searchbar {
+    padding: 1vh 1vw;
+    background-color: #e7e7e7;
+    width: 50%;
+    outline: none;
+    border: none;
+    /* border-left: 4px solid #0376d4; */
+    background-color: #e7e7e7;
+    border-radius: 3px;
+    font-family: "poppins", sans-serif;
+    font-size: .8vw;
+    
+}
+
+table {
+    width: 100%;
+    padding: 1vh 0;
+    
+}
+
+th {
+    text-align: center;
+    padding: 1vh 0;
+    border: 1px solid #cccaca;
+    background-color: #e7e7e7;
+    font-size: .9vw;
+    color: #0376d4;
+}
+
+table td {
+    color: #555555;
+    text-align: center;
+    border: 1px solid #cacaca;
+    padding: 1.2vh ;
+}
+.deleteuser{
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    font-size: .8vw;
+    cursor: pointer;
+    padding: .8vh 1vw;
+    background-color: #0376d4;
+    border: 2px solid #0376d4;
+    border-radius: .3rem;
+}
+.deleteuser:hover{
+    background-color: white;
+    color: #0376d4;
+}

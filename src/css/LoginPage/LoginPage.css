@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.loginpagecontainer {
+    /* border:2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #d2dde5;
+
+}
+
+.loginpagemaincontainer {
+    /* border: 2px solid red; */
+    display: flex;
+    height: 75vh;
+    width: 60vw;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 #0707074d, 0 6px 20px 0 #9292924a;
+}
+
+.loginpagemaincontainer .loginpagemaincontainerleftdiv {
+    /* border: 2px solid blue; */
+    width: 50%;
+    height: 100%;
+    background-color: #0376d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+
+}
+
+.loginpagemaincontainer .loginpagemaincontainerleftdiv .first {
+    color: antiquewhite;
+    font-size: 1.3vw;
+    margin-top: 2rem;
+
+}
+
+.loginpagemaincontainer .loginpagemaincontainerleftdiv .second {
+    color: white;
+    font-size: 1.9vw;
+
+}
+
+.loginpagemaincontainer .loginpagemaincontainerleftdiv .third {
+    color: antiquewhite;
+    font-size: 1.1vw;
+}
+
+.loginpagemaincontainer .loginpagemaincontainerrightdiv {
+    /* border: 2px solid yellow; */
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.loginpagemaincontainer .loginpagemaincontainerrightdiv .logintext {
+    color: #0376d4;
+    font-size: 4rem;
+    margin-bottom: 2vh;
+}
+
+.loginpagemaincontainer .loginpagemaincontainerrightdiv .logininput {
+    height: 6vh;
+    width: 71%;
+    border: none;
+    outline: none;
+    background-color: #e6e6e6;
+    margin: 1vh;
+    border-left: 5px solid #0376d4;
+    padding-left: 1vw;
+    font-size: 17px;
+    color: rgb(71, 71, 71);
+    font-family: "Poppins", sans-serif;
+
+}
+
+.loginpagemaincontainer .loginpagemaincontainerrightdiv .errormsg {
+    color: red;
+    width: 75%;
+    display: none;
+}
+
+.loginpagemaincontainer .loginpagemaincontainerrightdiv .admincontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.loginpagemaincontainer .loginpagemaincontainerrightdiv .admintext {
+    font-size: 19px;
+    margin: 1rem 0;
+    /* margin-top:1rem ;
+    margin-bottom:2rem ; */
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #0376d4;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #0376d4;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.loginpagemaincontainer .loginpagemaincontainerrightdiv .submitbtn {
+    height: 6.7vh;
+    width: 75%;
+    outline: none;
+    border: none;
+    background-color: #0376d4;
+    color: #fefefe;
+    margin-top: 1vh;
+    font-size: 23px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.loginpagemaincontainer .loginpagemaincontainerrightdiv .submitbtn:hover {
+    border: 2px solid #0376d4;
+    background-color: white;
+    color: #0376d4;
+}
+
+/* otp page */
+.loginpagemaincontainerrightdiv2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    display: none;
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerbackbtn .backbtn {
+    /* border:1px solid gray; */
+    color: #0376d4;
+    font-size: 1.25em;
+
+
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerbackbtn .backarrow {
+    font-size: 2rem;
+    padding: 0.6rem;
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpheader {
+    color: #0376d4;
+    font-size: 3em;
+    margin-bottom: 0.4rem;
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpdescription {
+    color: #535353;
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpimage {
+    height: 25vh;
+    width: 13vw;
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpinput {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    gap: 1rem;
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpbox {
+    height: 6.8vh;
+    width: 3vw;
+    outline: none;
+    border: none;
+    background-color: #e6e6e6;
+    color: #2e2e2e;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpresend {
+    margin-top: .9rem;
+    /* margin-bottom: rem; */
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpsubmitbtn {
+    height: 5.8vh;
+    width: 14vw;
+    border-radius: 2rem;
+    color: #f2f2f2;
+    background-color: #0376d4;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpsubmitbtn:hover {
+    border: 2px solid #0376d4;
+    background-color: white;
+    color: #0376d4;
+}
+
+.loginpagemaincontainerrightdiv2 .loginpagemaincontainerbackbtn {
+    padding: 0 1vw;
+    margin-top: 2vh;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .loginpagecontainer .loginpagemaincontainer {
+        flex-direction: column;
+        /* border: 1px solid red; */
+        height: 80vh;
+        width: 89vw;
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerleftdiv {
+        width: 100%;
+        height: 38vh;
+        gap: 0;
+        /* border: 1px solid green; */
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerrightdiv {
+        width: 100%;
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerleftdiv .logo {
+        margin-top: 1rem;
+        width: 26vw;
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerleftdiv .first {
+        font-size: 1rem;
+        margin-top: .9rem;
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerleftdiv .second {
+        font-size: 1.4rem;
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerleftdiv .third {
+        font-size: 1rem;
+        /* padding-bottom: 1rem; */
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerrightdiv .logininput {
+        width: 80%;
+        padding-left: .8rem;
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerrightdiv .submitbtn {
+        width: 82%;
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerrightdiv2 {
+        width: 100%;
+        gap: .2rem;
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerrightdiv2 .loginpagemaincontainerbackbtn {
+        padding: 0;
+        margin: 0;
+        font-size: .9rem;
+    }
+
+    .loginpagemaincontainer .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpheader {
+        font-size: 2.4rem;
+        margin: 0;
+        gap: 0;
+    }
+
+    .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpdescription {
+        font-size: .89rem;
+    }
+
+    .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpimage {
+        width: 27vw;
+        height: 13vh;
+    }
+
+    .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpinput {
+        gap: .5rem;
+    }
+
+    .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpbox {
+        height: 5.5vh;
+        width: 10.3vw;
+    }
+
+    .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpresend {
+        font-size: .85rem;
+    }
+
+    .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpsubmitbtn {
+        width: 80%;
+        /* margin-bottom:1rem ; */
+    }
+}

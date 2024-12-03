@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.dashboardmaincontainer {
+    /* border:1px solid red; */
+    height: 100vh;
+    width: 100vw;
+    font-family: "poppins", sans-serif;
+}
+
+.dashboardmaincontainer .dashboardcontainerdiv1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw;;    */
+    /* height: 15%; */
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 3%, 0.1), 0 6px 20px 0 hsla(0, 0%, 57%, 0.1);
+}
+
+.logo {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 1vw;
+    /* padding-left: 1.7rem; */
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name .clgname {
+    font-size: 1.7vw;
+    color: #0376d4;
+}
+
+.name .deptname {
+    color: #6b6b6b;
+    font-size: 1.3vw;
+}
+
+.dashboardmaincontainer .dashboardcontainerdiv1 .davlogo {
+    height: 12vh;
+    /* width: 7vw; */
+    padding: 1vh .7vw;
+}
+
+.btnandprofile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1vw;
+    padding-right: 2rem;
+}
+
+.btnandprofile .addactivitybtn {
+    color: whitesmoke;
+    background-color: #0376d4;
+    border: none;
+    outline: none;
+    /* height: 6vh;
+    width: 8.2vw; */
+    padding: 1.2vh .7vw;
+    font-family: "poppins", sans-serif;
+    font-size: .9vw;
+    border-radius: .3rem;
+
+}
+
+.userinfo :hover .logoutsection {
+    display: flex;
+}
+
+.profilelogo {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.profilelogo img {
+    width: 100%;
+    height: 100%;
+    border: 1px black solid;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btnandprofile .addactivitybtn:hover {
+    border: 3px solid #0376d4;
+    color: #0376d4;
+    background-color: #f5f5f5f5;
+    /* border-radius: 50%; */
+}
+
+.userinfo {
+    padding: 1vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.username {
+    /* font-size: 1.11rem; */
+    margin-top: 5px;
+    color: #6b6b6b;
+}
+
+.logoutsection {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 5;
+    border-radius: .4rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 2vh 1.9vw;
+    gap: 1vh;
+    color: #525050;
+    display: none;
+    box-shadow: 0 1px 5px 0 #296fa9;
+}
+
+.logoutexitbtn {
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    font-size: 1.2rem;
+    /* height: 3vh;
+    width: 1.8vw; */
+    padding: .3vh .6vw;
+    text-align: center;
+    color: white;
+    /* background-color: #ce0606; */
+    background-color: #0376d4;
+    border-radius: .3rem;
+}
+
+.logoutprofilephoto {
+    height: 110px;
+    width: 110px;
+    /* padding: .8vh; */
+}
+
+.logoutprofilephoto img {
+    border: 1px solid #6b6b6b;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.logoutname {
+    font-size: .8rem;
+}
+
+.logoutemailid {
+    font-size: .9rem;
+}
+
+.logoutbtn {
+    border: none;
+    padding: .8vh .5vw;
+    border-radius: .3rem;
+    font-size: 1rem;
+    border: 3px solid #0376d4;
+    color: #0376d4;
+    font-family: "poppins", sans-serif;
+    background-color: #e9eaef;
+}
+
+.logoutbtn:hover {
+    background-color: #0376d4;
+    color: rgb(236, 234, 234);
+    border: none;
+}
+
+/*-------------------------------------filter section---------------------------------------------------- */
+.dashboardcontainerdiv2 {
+}
+
+/* -------------------------table section----------------------- */
+
+.dashboardcontainerdiv3 {
+    /* border:1px solid #0376d4;     */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboardcontainerdiv3 table{
+    width: 100%;
+    padding: 1vw;
+}
+
+
+.dashboardcontainerdiv3  th {
+    text-align: center;
+    border: 2px solid #d1d0d0;
+    background-color: #e3e9ee;
+    color: #0376d4;
+    text-align: center;
+    padding: 1.6vh 1vw;
+}
+
+.dashboardcontainerdiv3  td {
+    /* border: 1px solid #d7cece; */
+    border: 2px solid #dfdede;
+    text-align: center;
+    padding: 1.3vh;
+    color: #555454;
+    font-size: .9vw;
+    font-family: "poppins", sans-serif;
+}
+.editbtn {
+    height: 4vh;
+    width: 7vw;
+    padding: .7vh .4vw;
+    border-radius: .3rem;
+    margin-right: .6vw;
+    font-size: .9rem;
+    border: 2px solid #0376d4;
+    cursor: pointer;
+    background-color: #0376d4;
+    color: white;
+    cursor: pointer;
+}
+
+.editbtn:hover {
+    background-color: white;
+    color: #0376d4;
+    border: 2px solid #0376d4;
+}
+
+.deletebtn {
+    height: 4vh;
+    width: 7vw;
+    background-color: #0376d4;
+    border: 2px solid #0376d4;
+    color: white;
+    /* background-color: rgb(255, 201, 201); */
+    padding: .7vh .4vw;
+    border-radius: .3rem;
+    font-size: .9rem;
+    /* color: #b00606; */
+    /* border: 2px solid #b00606; */
+}
+
+/* .deletebtn , .editbtn:hover{
+    background-color: white;
+    border: 2px solid #0376d4;
+} */
+.deletebtn:hover {
+    background-color: white;
+    color: #0376d4;
+    border: 2px solid #0376d4;
+}
+
+/* ------------activityform -----------*/
+
+.dashboardaddactivityform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 5px solid #0376d4;
+    position: absolute;
+    top: 10%;
+    left: 24%;
+    background-color: whitesmoke;
+    padding: 5vh 3vw;
+    gap: 4vh;
+    display: none;
+    z-index: 7;
+}
+
+.dashboardaddactivityform .activityformexitbtn {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: #b00606;
+    padding: .3vh 1vw;
+
+}
+
+.dashboardaddactivityform .activityfromheadername {
+    text-align: center;
+    color: #0376d4;
+    font-size: 1.7vw;
+}
+
+.activityfromdiv {
+    display: flex;
+    gap: 4.3vw;
+}
+
+.activityformdiv1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vh;
+}
+
+.activityformdiv2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vh;
+}
+
+.activityformfieldname {
+    color: #696e72;
+    font-size: 1vw;
+}
+
+.activityforminput {
+    border: none;
+    outline: none;
+    background-color: #e4e0e0;
+    border-radius: .3rem;
+    padding: 1.7vh .4vw;
+    border-left: 4px solid #0376d4;
+    font-size: .8vw;
+    width: 18vw;
+    font-family: "poppins", sans-serif;
+}
+
+.activityformdiv1 select {
+    border: none;
+    outline: none;
+    background-color: #e4e0e0;
+    border-radius: .3rem;
+    padding: 1.7vh .4vw;
+    border-left: 4px solid #0376d4;
+    font-size: .8vw;
+    width: 19vw;
+}
+
+.submitactivityformbtn {
+    border: none;
+    border: 3px solid #0376d4;
+    font-family: "poppins", sans-serif;
+    font-size: 1.1vw;
+    padding: 1vh 1vw;
+    width: 7vw;
+    color: #0376d4;
+    /* font-weight: ; */
+    background-color: whitesmoke;
+}
+
+.submitactivityformbtn:hover {
+    background-color: #0376d4;
+    color: whitesmoke;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.334);
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+.activityformerrormsg {
+    display: none;
+    color: #b00606;
+}
