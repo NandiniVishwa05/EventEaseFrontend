@@ -4,180 +4,317 @@
     height: 100vh;
     width: 100vw;
     font-family: "poppins", sans-serif;
+    display: flex;
+    gap: 1.5vh;
+    flex-direction: column;
 }
 
-.admindashboardcontainer .admindashboardcontainerdiv1 {
-    box-shadow: 0 5px 2px 0 rgba(8, 8, 8, 0.1), 0 2px 2px 0 rgba(51, 51, 51, 0.1);
-    padding: 1vh 1vw;
+.admindashboardcontainerdiv1 {
+    box-shadow: 0 3px 2px 0 rgba(16, 16, 16, 0.061);
     display: flex;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv {
+.admindashboardcontainerleftdiv {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1vw;
+    padding: .5vh .8vw;
 }
 
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv .davlogo {
-    height: 11vh;
-    width: 6.3vw;
+.davlogo {
+    /* height: 9vh; */
+    width: 5vw;
 }
 
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv .collegenamediv {
+.collegenamediv {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: .2vh;
 }
 
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv .collegenamediv .first {
-    font-size: 1vw;
+.first {
     color: #6b6b6b;
 }
 
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv .collegenamediv .second {
-    font-size: 1.8rem;
+.second {
+    font-size: 1.5rem;
     color: #0376d4;
 }
 
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerleftdiv .collegenamediv .third {
+.third {
     color: #6b6b6b;
 }
 
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv {
+.admindashboardcontainerrightdiv {
     display: flex;
+    position: relative;
+    flex-direction: column;
     align-items: center;
-    gap: 3vw;
+    padding: .5vh 1vw;
+}
+.profilelogo {
+    border: 2px solid rgba(102, 100, 100, 0.22);
+    border-radius: 50%;
+    height: 6vh;    
+    width: 3vw;
 }
 
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv .user {
-    padding: 1vh 1vw;
-    font-size: 1.2vw;
+.adminname {
+    font-size: 1.3rem;
+    color: #6b6b6b;
+}
+
+.admindropdownmenu {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 0px 8px 0 rgba(184, 184, 184, 0.2), 0 0px 20px 0 rgba(179, 179, 179, 0.19);
+    width: 14vw;
+    display: none;
+    flex-direction: column;
+    right: 0;
+    border-radius: 5px;
+}
+
+.admindropdownitem {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.admindropdownitem:hover {
+    background-color: #e3e9ee61;
+}
+
+.admindashboardcontainerrightdiv:hover .admindropdownmenu{
+    display: flex;
+}
+
+/* div2 */
+
+.headeradmin {
+    padding:0 1vw;
+    font-size: 1.8rem;
+    color: #6b6b6b;
+}
+.admindashboardcontainerdiv2 {
+    display: flex;
+    width: 95%;
+    padding:0 1vw;
+}
+
+.adminfiltersectiondiv {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    width: 100%;
+}
+
+select {
+    padding: 1vh .3vw;
+    border: none;
+    outline: none;    
+    background-color: #e3e9ee;
+    font-family: "poppins", sans-serif;
+    width: 60%;
+}
+
+.filtersubmitbtn{
+    padding: .7vh 1vw;
+    font-size: 1.2rem;
     border: none;
     outline: none;
+    border: 3px solid #0376d4;
+    color: white;
+    border-radius: 3px;
+    background-color: #0376d4;
+}
+
+.filtersubmitbtn:hover {
+    font-size: 1.2rem;
+    padding: .7vh 1vw;
     background-color: white;
     border: 3px solid #0376d4;
     color: #0376d4;
+    cursor: pointer;
 }
-
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv .user:hover {
-    background-color: #0376d4;
-    color: whitesmoke;
-}
-
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv .adminprofile {
+/* div3 */
+.downloadandactivityheaderdiv {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-right: 1vw;
+    justify-content: space-between;
+    width: 99%;
 }
-
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv .adminprofile .profilelogo {
-    height: 10vh;
-}
-
-.admindashboardcontainer .admindashboardcontainerdiv1 .admindashboardcontainerrightdiv .adminprofile .adminname {
-    font-size: 1.2vw;
-    color: #6b6b6b;
-}
-
 .admindashboardcontainerdiv3 {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.admindashboardcontainerdiv3 table {
     width: 100%;
-    padding: 1vw;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5vh;
 }
 
-.admindashboardcontainerdiv3 th {
-    border: 2px solid #d1d0d0;
+.admindashboardsubcontainerdiv3 {
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    height: 67vh;
+    overflow-y: scroll;
+}
+ th {
+    border: 1px solid #cccaca;
     background-color: #e3e9ee;
     color: #0376d4;
-    text-align: center;
-    padding: 1.4vh 1vw;
-
+    padding: 1vh 1vw;
+    position: sticky;
+    top: 0;
 }
 
-.admindashboardcontainerdiv3 td {
+ td {
     border: 2px solid #dfdede;
-    text-align: center;
-    padding: 1.3vh;
+    padding: 1vh 0;
     color: #555454;
     font-size: .9vw;
 }
-
-
-.adminlogoutsection {
-    position: absolute;
-    top: 7%;
-    right: 2%;
-    border-radius: .4rem;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f4f4f4;
-    border: 2px solid rgb(180, 180, 180);
-    padding: 1vh 3vw;
-    gap: 1vh;
-    color: #525050;
-    display: none;
-    box-shadow: 0 1px 2px 0 #296fa9;
-}
-
-.adminlogoutexitbtn {
-    position: absolute;
-    top: 3%;
-    right: 3%;
-    font-size: 1.2rem;
-    /* height: 3vh;
-    width: 1.8vw; */
-    padding: .3vh .6vw;
-    text-align: center;
-    color: white;
-    /* background-color: #ce0606; */
-    background-color: #0376d4;
-    border-radius: .3rem;
-}
-
-.adminlogoutprofilephoto {
-    height: 10vh;
-    /* width: 6vw; */
-    border-radius: 50%;
-    padding: .8vh;
-    border: 1px solid #6b6b6b;
-}
-
-.adminlogoutname {
-    font-size: .8rem;
-}
-
-
-.adminlogoutbtn {
-    border: none;
-    padding: .8vh .5vw;
-    border-radius: .3rem;
-    border: 3px solid #0376d4;
-    font-family: "poppins", sans-serif;
-    background-color: #0376d4;
-    color: white;
-}
-
-.adminlogoutbtn:hover {
-    background-color: #0376d4;
-    color: #0376d4;
-    border: none;
-    border: 3px solid #0376d4;
-    background-color: white;
-    padding: .8vh .5vw;
-    /* font-size: 1rem; */
-}
-
 .adduserformfield {
     display: flex;
     flex-direction: column;
+}
+
+
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    accent-color: #0376d4;
+
+}
+
+.downloadall {
+    padding: 1vh 1vw;
+    /* width: 9%; */
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: #0376d4;
+    color: white;
+    border: 3px solid #0376d4;
+
+}
+
+.downloadall:hover {
+    border: 3px solid #0376d4;
+    background-color: white;
+    color: #0376d4;
+}
+/* departmentform */
+.adddepartmentmaincontainer {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    gap: 3vh;
+    height: 67vh;
+    width: 50%;
+    position: fixed;
+    top: 9%;
+    left: 25%;
+    padding: 3vh 2vw;
+}
+
+.managedepartmentheader {
+    font-size: 2vw;
+    color: #0376d4;
+    padding: 1vh 0;
+}
+
+.adddepartmentlabelname {
+    font-size: 1.3rem;
+    color: #525252;
+}
+
+.adddepartmentlabelinput {
+    padding: 1vh .5vw;
+    outline: none;
+    border: none;
+    background-color: #e3e9ee;
+    border-radius: 3px;
+    font-family: "poppins", sans-serif;
+    font-size: .8vw;
+    width: 70%;
+}
+
+.adddepartmentbtn {
+    border: none;
+    outline: none;
+    background-color: #0376d4;
+    border: 2px solid #0376d4;
+    padding: .4vh 1vw;
+    font-size: 1vw;
+    font-family: "poppins", sans-serif;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.adddepartmentbtn:hover {
+    border: 2px solid #0376d4;
+    background-color: white;
+    color: #0376d4;
+}
+
+.adddepartmentaddinputsection {
+    display: flex;
+}
+
+.adddepartmentinput {
+    width: 100%;
+}
+
+.adddepartmentdeletebtn {
+    border: none;
+    outline: none;
+    background-color: #0376d4;
+    border: 2px solid #0376d4;
+    padding: .2vh .5vw;
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.adddepartmentdeletebtn:hover {
+    border: 2px solid #0376d4;
+    background-color: white;
+    color: #0376d4;
+}
+
+.adddepartmenttablemaincontainer {
+    width: 100%;
+}
+
+.adddepartmenttablecontainer {
+    overflow-y: scroll;
+}
+.adddepartmentexitbtn{
+    position: absolute;
+    right: 0;
+    background-color: #0376d4;
+    top: 0;
+    color:white;
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+}
+.admindashboardsubcontainerdiv3table{
+    width: 100%;
+}
+.downloadactivitytablebtns{
+    display: flex;
+    gap: 1vw;
 }

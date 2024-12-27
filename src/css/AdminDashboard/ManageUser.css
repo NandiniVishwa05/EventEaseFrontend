@@ -6,10 +6,13 @@
     width: 100vw;
     position: absolute;
     top: 0;
+    left: 0;
     display: none;
+    right: 0;
 }
 
 .manageuserdiv {
+    overflow: hidden;
     /* border:1px solid red; */
     height: 100vh;
     width: 100vw;
@@ -26,11 +29,11 @@
     flex-direction: column;
     gap: 1.2vh;
     /* align-items: center; */
-    background-color: whitesmoke;
+    background-color: white;
     position: absolute;
-    top: 9%;
+    top: 5%;
     left: 12%;
-    padding: 2.8vh 2.2vw;
+    padding: 2vh 2vw;
     justify-content: center;
 }
 
@@ -54,7 +57,7 @@
     padding: 1vh 0;
     display: flex;
     gap: 1.5vw;
-}
+}   
 
 .adduserlabelname {
     font-size: 1vw;
@@ -66,7 +69,7 @@
     outline: none;
     border: none;
     /* border-left: 4px solid #0376d4; */
-    background-color: #e7e7e7;
+    background-color: #e3e9ee;
     border-radius: 3px;
     font-family: "poppins", sans-serif;
     font-size: .8vw;
@@ -86,43 +89,32 @@
     font-size: 1vw;
     font-family: "poppins", sans-serif;
     color: white;
+    border-radius: 3px;
     cursor: pointer;
 }
-.adduserbtn:hover{
+
+.adduserbtn:hover {
     border: 2px solid #0376d4;
     background-color: white;
     color: #0376d4;
 }
-.searchlabelname {
-    font-size: 1.1vw;
-    color: #525252;
-}
 
-.searchbar {
-    padding: 1vh 1vw;
-    background-color: #e7e7e7;
-    width: 50%;
-    outline: none;
-    border: none;
-    /* border-left: 4px solid #0376d4; */
-    background-color: #e7e7e7;
-    border-radius: 3px;
-    font-family: "poppins", sans-serif;
-    font-size: .8vw;
-    
+.searchlabelname {
+    font-size: 1.3rem;
+    color: #525252;
 }
 
 table {
     width: 100%;
-    padding: 1vh 0;
-    
+    /* padding: 1vh 0; */
+
 }
 
 th {
     text-align: center;
     padding: 1vh 0;
     border: 1px solid #cccaca;
-    background-color: #e7e7e7;
+    background-color: #e3e9ee;
     font-size: .9vw;
     color: #0376d4;
 }
@@ -131,9 +123,10 @@ table td {
     color: #555555;
     text-align: center;
     border: 1px solid #cacaca;
-    padding: 1.2vh ;
+    padding: 1.2vh;
 }
-.deleteuser{
+
+.deleteuser {
     border: none;
     outline: none;
     color: whitesmoke;
@@ -144,7 +137,48 @@ table td {
     border: 2px solid #0376d4;
     border-radius: .3rem;
 }
-.deleteuser:hover{
+
+.deleteuser:hover {
     background-color: white;
     color: #0376d4;
+}
+
+.searchuserbtn {
+    padding: 0 1vw;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    border: 3px solid #0376d4;
+    cursor: pointer;
+    padding: 1vh 1vw;
+    color: white;
+    background-color: #0376d4;
+}
+
+.searchuserbtn:hover {
+    border-radius: 3px;
+    /* padding: 0 1vw; */
+    padding: 1vh 1vw;
+    font-size: 1.2rem;
+    /* padding: 0 2vw; */
+    background-color: white;
+    border: 3px solid #0376d4;
+    color: #0376d4;
+}
+
+.searchbardiv {
+    display: flex;
+    gap: 2.5vw;
+    align-items: center;
+}
+
+.usersearchbar {
+    width: 50%;
+    font-size: 1rem;
+    padding: 1vh 1vw;
+    border: none;
+    outline: none;
+    font-family: "poppins", sans-serif;
+    background-color: #e3e9ee;
 }

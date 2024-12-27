@@ -19,6 +19,7 @@
     width: 60vw;
     background-color: whitesmoke;
     box-shadow: 0 4px 8px 0 #0707074d, 0 6px 20px 0 #9292924a;
+    align-items: center;
 }
 
 .loginpagemaincontainer .loginpagemaincontainerleftdiv {
@@ -30,79 +31,90 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.4rem;
+    gap: 1vh;
 
 }
 
 .loginpagemaincontainer .loginpagemaincontainerleftdiv .first {
     color: antiquewhite;
     font-size: 1.3vw;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 
 }
 
 .loginpagemaincontainer .loginpagemaincontainerleftdiv .second {
     color: white;
-    font-size: 1.9vw;
+    font-size: 1.8vw;
 
 }
 
 .loginpagemaincontainer .loginpagemaincontainerleftdiv .third {
     color: antiquewhite;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
 }
 
-.loginpagemaincontainer .loginpagemaincontainerrightdiv {
-    /* border: 2px solid yellow; */
-    position: relative;
-    width: 50%;
-    height: 100%;
+.loginpagemaincontainerrightdiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.7rem;
+    width: 50%;
+    gap: 1.5vh;
+    /* display: none; */
 }
 
-.loginpagemaincontainer .loginpagemaincontainerrightdiv .logintext {
+.loginpagemaincontainerrightdivitems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logintext {
     color: #0376d4;
     font-size: 4rem;
-    margin-bottom: 2vh;
 }
 
-.loginpagemaincontainer .loginpagemaincontainerrightdiv .logininput {
-    height: 6vh;
-    width: 71%;
-    border: none;
+.logininput {
+    width: 70%;
+    padding: 1.8vh 1vw;
+    font-family: "poppins", sans-serif;
+    font-size: 1.1rem;
     outline: none;
-    background-color: #e6e6e6;
-    margin: 1vh;
+    border: none;
+    color: rgb(90, 90, 90);
     border-left: 5px solid #0376d4;
-    padding-left: 1vw;
-    font-size: 17px;
-    color: rgb(71, 71, 71);
-    font-family: "Poppins", sans-serif;
-
+    background-color: #e3e2e29f;
 }
 
-.loginpagemaincontainer .loginpagemaincontainerrightdiv .errormsg {
+.errordiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errormsg {
     color: red;
     width: 75%;
     display: none;
 }
 
-.loginpagemaincontainer .loginpagemaincontainerrightdiv .admincontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 75%;
-}
-
-.loginpagemaincontainer .loginpagemaincontainerrightdiv .admintext {
+.admintext {
     font-size: 19px;
     margin: 1rem 0;
-    /* margin-top:1rem ;
-    margin-bottom:2rem ; */
+}
+
+.adminselectdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 77%;
+    /* border: 1px solid green; */
+}
+
+.forgotpassword {
+    color: #0376d4;
 }
 
 .switch {
@@ -165,16 +177,16 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-.loginpagemaincontainer .loginpagemaincontainerrightdiv .submitbtn {
+.submitbtn {
     height: 6.7vh;
-    width: 75%;
+    width: 77%;
     outline: none;
     border: none;
     background-color: #0376d4;
     color: #fefefe;
     margin-top: 1vh;
     font-size: 23px;
-    border-radius: 1rem;
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -194,17 +206,19 @@ input:checked+.slider:before {
     display: none;
 }
 
-.loginpagemaincontainerrightdiv2 .loginpagemaincontainerbackbtn .backbtn {
-    /* border:1px solid gray; */
-    color: #0376d4;
-    font-size: 1.25em;
-
-
+.loginpagemaincontainerbackbtn {
+    padding: 1vh 0;
 }
 
-.loginpagemaincontainerrightdiv2 .loginpagemaincontainerbackbtn .backarrow {
-    font-size: 2rem;
-    padding: 0.6rem;
+.loginpagemaincontainerbackbtn .backbtn {
+    /* border:1px solid gray; */
+    color: #0376d4;
+    font-size: 1.4rem;
+}
+
+.loginpagemaincontainerbackbtn .backarrow {
+    font-size: 1.3rem;
+    padding: 1rem;
 }
 
 .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv {
@@ -234,29 +248,30 @@ input:checked+.slider:before {
     display: flex;
     flex-direction: row;
     /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
 .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpbox {
-    height: 6.8vh;
-    width: 3vw;
+    width: 25%;
+    padding: 2vh 2vw;
     outline: none;
     border: none;
     background-color: #e6e6e6;
+    border: 1px solid rgb(190, 188, 188);
     color: #2e2e2e;
-    font-size: 1.3em;
-    text-align: center;
+    font-size: 1.5rem;
 }
 
 .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpresend {
     margin-top: .9rem;
-    /* margin-bottom: rem; */
 }
 
 .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpsubmitbtn {
-    height: 5.8vh;
-    width: 14vw;
-    border-radius: 2rem;
+    padding: 1.5vh 1vw;
+    width: 74%;
+    border-radius: 5px;
     color: #f2f2f2;
     background-color: #0376d4;
     outline: none;
@@ -264,6 +279,11 @@ input:checked+.slider:before {
     font-size: 20px;
     margin-top: 1rem;
     cursor: pointer;
+    border: 2px solid #0376d4;
+}
+.logo{
+    /* height: 20vh; */
+    width: 11vw;
 }
 
 .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpsubmitbtn:hover {
@@ -277,7 +297,7 @@ input:checked+.slider:before {
     margin-top: 2vh;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
     .loginpagecontainer .loginpagemaincontainer {
         flex-direction: column;
@@ -298,7 +318,6 @@ input:checked+.slider:before {
     }
 
     .loginpagemaincontainer .loginpagemaincontainerleftdiv .logo {
-        margin-top: 1rem;
         width: 26vw;
     }
 
@@ -366,6 +385,212 @@ input:checked+.slider:before {
 
     .loginpagemaincontainerrightdiv2 .loginpagemaincontainerotpdiv .otpsubmitbtn {
         width: 80%;
-        /* margin-bottom:1rem ; */
     }
+}
+
+.loginpagemaincontainerforgotpassworddiv {
+    height: 100%;
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.forgotpasswordheaderdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.forgotpasswordheader {
+    color: #0376d4;
+    font-size: 2rem;
+}
+
+.forgotpassworddesc {
+    color: #909090;
+    font-size: 1.1rem;
+    display: none;
+}
+
+.sentemaildesc {
+    color: #909090;
+    font-size: 1.1rem;
+    display: none;
+
+}
+
+.forgotpasswordemailinput {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 70%;
+}
+
+.forgotpasswordotpinput {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 70%;
+    visibility: visible;
+    display: none;
+}
+
+.forgotpasswordinputlabel {
+    color: #535353;
+    font-size: 1.3rem;
+
+}
+
+.forgotpasswordinput {
+    font-size: 1rem;
+    padding: 1.5vh 1vw;
+    border: none;
+    border-left:5px solid #0376d4 ;
+    outline: none;
+    background-color: #e5e5e5;
+    border-radius: 3px;
+}
+
+.forgotpasswordinputbtn {
+    /* width: 70%; */
+    outline: none;
+    border: none;
+    background-color: #0376d4;
+    color: white;
+    padding: 1.2vh 0;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid #0376d4;
+}
+
+.forgotpasswordinputbtn:hover {
+    border: 3px solid #0376d4;
+    background-color: white;
+    color: #0376d4;
+}
+
+.setpasswordcontainer {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 100%;
+    display: none;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.setpasswordheaderlabel {
+    font-size: 2.5rem;
+    color: #0376d4;
+}
+
+.setpasswordbody {
+    display: flex;
+    flex-direction: column;
+    gap: 2.7vh;
+    width: 70%;
+}
+
+.setpasswordinputdiv1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.setpasswordinputdiv2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+}
+
+.setpasswordinputlabel {
+    color: #535353;
+    font-size: 1.3rem;
+}
+
+.setpasswordinput {
+    font-size: 1rem;
+    padding: 1.5vh 1vw;
+    border: none;
+    outline: none;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+
+.setpasswordsubmitbtn {
+    width: 70%;
+}
+
+.setpasswordinputbtn {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #0376d4;
+    color: white;
+    padding: 1.5vh 0;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 3px solid #0376d4;
+}
+
+.setpasswordinputbtn:hover {
+    border: 3px solid #0376d4;
+    background-color: white;
+    color: #0376d4;
+}
+
+.forgotpasswordinputbtndiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.verifyotpbtn {
+    display: none;
+}
+
+.setpasswordbackbtn {
+    padding: 1vh 0;
+}
+
+.setpasswordbackbtn {
+    /* border:1px solid gray; */
+    color: #0376d4;
+    font-size: 1.4rem;
+}
+
+.setpasswordbackarrow {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.forgotpasswordbackbtndiv {
+    /* padding: 1vh 0; */
+}
+
+.forgotpasswordbackbtn {
+    /* border:1px solid gray; */
+    color: #0376d4;
+    font-size: 1.4rem;
+}
+
+.forgotpasswordbackarrow {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.forgotpasswordotpresendlabel {
+    display: none;
 }

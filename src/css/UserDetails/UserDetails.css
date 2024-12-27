@@ -101,3 +101,16 @@
 .errorlabel{
     color: red;
 }
+.filefield{
+    /* background-color: ; */
+    border: none;
+    outline: none;
+    background-color: #e6e2e2;
+    width: 76%;
+    border-left: 3.5px solid #0376d4;
+    font-size: 0.9rem;
+    font-family: "poppins",sans-serif;
+    padding-left: 0.6rem;
+    border-radius: .3rem;
+    padding: 2vh .3vw;
+}
